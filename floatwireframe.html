@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .row{
+            border: solid 1px red;
+        }
+          /* height: 150px;
+            font-size: 0px; 
+            IF WE EXPLICITLY DO NOT MEINTION THE SIZE OF THE PARENT I.E DIV HEIGHT 150PX  THEN ACCORDING TO DEFAULT PROPERTY OF DIV IT WILL VANISH ALL THOSE DIV WHICH DO  NOT CONTAIN ANY CONTENT UNDER THEMSELVES AND U CAN CHECK IT BY REMOVING THIS COMMENT
+            THAT IS WHY DEVLOPERS DO NOT USE IT
+
+            BUT THIS DISADVANTAGE CAN BE REMOVED BY BELOW CODE*/
+        .row::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .col{
+            border: solid 2px black;
+            float: left;
+            height: 100%;
+            width: 33.33%;
+        }
+        .col2{
+            border: solid 2px black;
+            float: left;
+           
+            height: 100%;
+            width: 50%;
+        }
+        .row2{
+            border: solid 2px blue;
+            height: 50%;
+        }
+        .col3{
+            border: solid 2px black;
+            float: left;
+          
+            width: 22.22%;
+            height: 100%;
+        }
+        .col31{
+            border: solid 2px black;
+            height:50%;
+        }
+        .col4{
+             border: solid 2px black;
+             float: left;
+            
+             width: 22.22%;
+             height: 100%;
+        }
+        .col5{
+             border: solid 2px black;
+             float: left;
+           
+             width: 22.22%;
+             height: 100%;
+        }
+        .col6{
+             border: solid 2px black;
+             float: left;
+           
+             width: 33.33%;
+             height: 100%;
+        }
+        .col7{
+            border: solid 2px black;
+            float: left;
+            
+            height: 100%;
+            width: 50%;
+        }
+        .col8{
+            border: solid 2px black;
+            float: left;
+           
+            height: 100%;
+            width: 50%;
+        }
+        .col9{
+            border: solid 2px black;
+            float: left;
+        
+            height: 100%;
+            width: 50%;
+        }
+        .col10{
+            border: solid 2px black;
+            float: left;
+           
+            height: 100%;
+            width: 50%;
+        }
+        </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col"></div> 
+        <div class="col"></div> 
+        <div class="col"></div> 
+        
+    </div>
+
+    <div class="row">
+        <div class="col2">
+            <div class="row2"></div>
+            <div class="row2"></div>
+        </div>
+        <div class="col2"></div>
+    </div>
+
+
+    <div class="row">
+        <div class="col3">
+            <div class="col31"></div>
+            <div class="col31"></div>
+        </div>
+        <div class="col4"></div>
+        <div class="col5"></div>
+        <div class="col6"></div>
+
+
+    </div>
+    <div class="row">
+        <div class="col7"></div>
+        <div class="col8"></div>
+    </div>
+
+    <div class="row">
+        <div class="col9"></div>
+        <div class="col10"></div>
+    </div>
+    
+</body>
+</html>

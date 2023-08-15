@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+/* an inline style has the highest priority, and will override external and internal styles and browser defaults. */
+
+
+        /* Example of element selectors- these selectors are used to style all the elements of a particular type at once */
+        /* p{
+            color: aqua;
+        }
+        #abc{
+            color:rgb(192, 12, 84);
+        }
+        /* example of id selector */
+        /* .xyz{
+            color:yellow;
+        }
+        /* example of class selectors */
+        /* p#abc{
+            color:violet;
+        }  */ 
+        /* combination selectors */
+        /* p > a {
+            color: cyan;
+        }
+        div > p{
+            color: yellow;
+        } */
+        /* child selectors  here p is parent and a is child */
+        /* div a {
+            color:green;
+        } */
+        /* descendant selectors  here div is ancestor and a is descendant */
+        /* p,h1,a{
+            color: violet;
+        } */
+        /* grouping selctors */
+        /* input[type="text"]{
+            color: green;
+            background-color: red;
+     
+        } */
+        /* attribute selectors */
+         /* The CSS Universal Selector
+          The universal selector (*) selects all HTML elements on the page. */
+          /*
+           * {
+               text-align: center;
+                color: blue;
+        }  */
+        /* #information{
+            color: yellow;
+        } */
+        p{
+            color: rgb(39, 61, 169);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <p class="xyz">This is paragraph</p>
+    <p class="xyz"> This is another paragraph</p>
+    <div>
+        <p id="abc" class="xyz">this paragraph is under div</p>
+    </div>
+    <div>
+         <ul>
+        <li>
+            <a href="www.google.com" target="_blank">Google</a> 
+        </li>
+        <li>
+            <a href="www.facebook.com" target="_blank">facebook</a>
+        </li>
+         </ul>
+    </div>
+    <div>
+        <p>
+            <a href="www.intershala.com" target="_blank">intershala</a>
+        </p>
+    </div>
+
+
+
+    <form>
+    <label for="information">INFO</label>
+    <input type="text" id="information" name="text" value="text"/>info
+    <label for="address">Address</label>
+    <input type="text" id="address" name="text" value="address"/>
+    <input type="radio" name="gender" value="male">Male
+</form>
+
+</body>
+</html>

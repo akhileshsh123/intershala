@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box{
+            border: dotted 2px blue;
+            width: 500px;
+            display: flex;
+            
+            flex-flow: row nowrap;
+            /* FLEX FLOW CONTAIN BOTH PROPERTIES I.E flex-direction: row; AND FLEX-WRAP : WRAP; */
+           
+            
+           
+    
+        }
+        .box > div {
+            border: solid 2px red;
+            border-radius: 5px;
+        }
+        .one {
+            flex : 0 0 100px;
+        }
+        .two {
+            flex : 0 1 100px;
+        }
+        .three{
+            flex : 0 1 100px;
+        }
+        /* DEFAULT VALUE OF FLEX GROW IS 0 AND FLEX SHRINK IS 1 */
+        /* HERE FLEX : 0 0 200PX IS SHORTAND PROPERTIES FOR FLEX GROW , FLEX SHRINK , FLEX BASIS RESPECTIVELY */
+    
+    </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="one">one</div>
+            <div class="two">two </div>
+            <!-- how  are you i am always fine by the way how are u -->
+            <!-- ADD THE ABOVE COMMENT INTO THE CONTENT OF DIV CLASS TWO AND OBSERVE THE OUTPUT AND THE OUPTPUT U WILL SEE IS DUE TO THE DEFAULT PROPERTY OF HEIGHT WHICH IS AUTO  -->
+            <div class="three">thee</div>
+        
+    </body>
+    </html>

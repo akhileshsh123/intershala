@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: solid 1px red;
+        }
+        h1{
+            position: relative;
+            z-index: 90;
+        }
+        p{
+            background-color: skyblue;
+            position: relative;
+            top: -25px;
+            z-index: 2;
+        }
+        /* IT HAS 4 PROPERTIES: TOP, RIGHT,BOTTOM,LEFT
+        ABOVE IS RELATIVE POSITION */ 
+        /* .abc{
+            position:fixed;
+            bottom: 20px;
+            left: 10px;
+        } */
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is heading</h1>
+        <p>This is the first paragraph</p>
+        <p class="abc">This is second paragraph</p>
+        <p>This is third paragraph</p>
+    </div>
+</body>
+</html>

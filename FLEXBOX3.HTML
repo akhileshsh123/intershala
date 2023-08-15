@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box{
+            border: dotted 2px red;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box > div {
+            border: solid 2px blue;
+            border-radius: 5px;
+        }
+        .one{
+            flex-basis: 100px;
+             flex-grow: 1;
+        }
+        .two{
+            flex-basis: 100px;
+            flex-grow: 2;
+        }
+        .three{
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+        /* HERE TWO TAKES MAX PORTION AND IT IS DESCRIBED AS BELOW 
+        500PX - 4PX OF BORDER - 300PX OF ONE , TWO , THREE = 196PX
+        ONE THREE WILL TAKE EQUAL PORTIONS
+        AND TWO WILL TAKE TWO TIMES GREATAER THAN ONE AND .three
+        196%2 = 98 AND TWO WILL TAKE 98 PX AND ONE AND THREE WILL TAKE 44 PX EACH */
+        </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"> one</div> 
+        <div class="two"> two</div> 
+        <div class="three"> three</div> 
+    </div>
+    
+</body>
+</html>

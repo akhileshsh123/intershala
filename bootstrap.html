@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="bootstrapcss.css" type="text/css" />
+    <linl rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+    <style>
+        .row{
+    border: solid 1px black;
+    margin-top: 50px;
+}
+[class*="col-"] , .col {
+    border: solid 1px red;
+}
+    </style>
+
+    <title>bootstrap</title>
+  </head>
+  <body>
+    <h1>hello bootstrap world</h1>
+    <div class="container">
+      <div class="row">
+        <!-- here total size of div is 12 so col-4 denotes that is takes 33.33% portion out of 100% and it can be defined as 
+        4/12*100=33.33% so these three div elements totally takes 99.99% of width 
+              most importantly there sum is 12 if we add col -4 three times -->
+        <!-- <div class="col-4">1 of 3</div>
+        <div class="col-4">2 of 3</div>
+        <div class="col-4">3 of 3</div>
+         u can use above commented code with it  -->
+        <div class="col-4">1 of 3</div>
+        <div class="col-6">2 of 3</div>
+        <div class="col-2">3 of 3</div>
+
+        <!-- sometimes the sum may exceed 12 but we have used flex property in bootstrap file of row div element so it will produce the result according to the values provided by user -->
+        <!-- <div class="col-4">1 of 3</div>
+        <div class="col-4">2 of 3</div>
+        <div class="col-6">3 of 3</div>
+
+        in THE above code the value is more than 12 i.e 14
+
+        <div class="col-4">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col-auto">3 of 3</div>
+
+        in the above code we have used col 3 as auto it will take space according to the content placed in div
+
+        <div class="col-4">1 of 3</div>
+        <div class="col-2">2 of 3</div>
+        <div class="col-3">3 of 3</div> -->
+
+        <!-- in the above code the sum is less than 12 -->
+
+        <div class="col-4">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col-auto">3 of 3</div>
+
+
+
+
+        <div class="col-4">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col">3 of 3</div>
+
+
+
+        
+      </div>
+      <div class="row">
+        <!-- here col-6 denotes that each div class element will take 50% space out of 100% width space and it can be defined as 
+        6/12*100=50% 
+          Most importantly there sum is 12 if we add col-6 two times -->
+        <div class="col-6">1 of 2</div>
+        <div class="col-6">2 of 2</div>
+      </div>
+    </div>
+  </body>
+</html>

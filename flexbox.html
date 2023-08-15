@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box{
+            border: dotted 2px red;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box > div {
+            border: solid 2px blue;
+            border-radius: 5px;
+            width: 100px;
+        }
+        .one{
+            flex-basis: 50px;
+             /* IT OVERRIDES THE VALUE OF 100PX ASSIGNED IN ABOVE CODE */
+        }
+        .two{
+            flex-basis: auto;
+        }
+        .three{
+            flex-basis: 200px;
+            /* IT OVERRIDES THE VALUE OF 100PX ASSIGNED IN ABOVE CODE */
+        }
+        /* 500-4-50-100-200 = 146PX LEFT
+        U CAN  CHECK IT ADDING THIS 146 PX IN ANY ONE FLEX BASIS 
+        flex-basis: 396px;
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"> one</div> 
+        <div class="two"> two</div> 
+        <div class="three"> three</div> 
+    </div>
+
+</body>
+</html>
